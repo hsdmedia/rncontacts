@@ -1,8 +1,8 @@
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 import React from 'react';
-
-// import AppNavContainer from './src/navigations';
-// import GlobalProviders from './src/context/Provider';
+import { Text } from 'react-native';
+import AppNavContainer from './src/navigations';
+import GlobalProviders from './src/context/Provider';
 
 
 const App = () =>
@@ -10,10 +10,11 @@ const App = () =>
 
   return (
     <>
+      {/* <Text>Yalla with node modeules</Text> */}
+      <GlobalProviders>
+        <AppNavContainer />
+      </GlobalProviders>
     </>
-    // <GlobalProviders>
-    // <AppNavContainer></AppNavContainer>
-    // </GlobalProviders>
   );
 };
 
